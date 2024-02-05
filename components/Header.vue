@@ -1,11 +1,11 @@
 <template>
   <header
-    class="w-full z-20 sticky top-0 text-white bg-zinc-900 transition1sec"
+    class="w-full z-20 sticky top-0 text-white bg-zinc-200 transition1sec shadow-bottom"
     :class="{ 'bg-color': isScrolled }"
   >
     <!-- nav desktop -->
     <nav
-      class="lg:max-h-28 max-h-20 w-full py-4 lg:py-6 grid grid-cols-2 grid-rows-1 lg:grid-cols-2 items-center justify-between lg:border-none"
+      class="lg:max-h-28 max-h-20 w-full py-2 lg:py-6 grid grid-cols-2 grid-rows-1 lg:grid-cols-2 items-center justify-between lg:border-none"
       aria-label="Top"
     >
       <!-- logo -->
@@ -18,10 +18,15 @@
           class="h-full"
           sizes="xs:100vw"
         /> -->
-        <p>img</p>
+        <NuxtImg src="jp.png" alt="logo" class="h-16" sizes="xs:100vw" />
       </NuxtLink>
-      <div class="text-right pr-8 lg:hidden flex justify-end" @click="toggle">
-        <i class="fa-solid fa-bars cursor-pointer" style="color: #ffffff" />
+      <div
+        class="w-full h-full pr-8 lg:hidden flex justify-end items-center"
+        @click="toggle"
+      >
+        <i
+          class="fa-solid fa-bars cursor-pointer h-5 p-4 bg-orange-400 rounded-lg"
+        />
       </div>
       <!-- navigation -->
       <div
@@ -50,7 +55,7 @@
       class="lg:hidden w-full absolute top-0 h-screen z-40 grid grid-cols-2 grid-rows-4 bg-opacity-40 backgroundBlur bg-black"
     >
       <div
-        class="grid grid-cols-2 grid-rows-1 col-span-2 my-4 h-12 justify-items-center w-full"
+        class="grid grid-cols-2 grid-rows-1 col-span-2 my-2 h-12 justify-items-center w-full"
       >
         <!-- logo -->
         <NuxtLink to="/" class="flex justify-center lg:col-span-1 h-full">
@@ -62,15 +67,15 @@
             class="h-full"
             sizes="xs:100vw"
           /> -->
-          <p>img</p>
+          <NuxtImg src="jp.png" alt="logo" class="h-16" sizes="xs:100vw" />
         </NuxtLink>
         <!-- hamburger icon -->
         <div
-          class="w-full h-full pr-8 lg:hidden flex justify-end items-center"
+          class="w-full h-full pr-8 lg:hidden flex justify-end items-center my-2"
           @click="toggle"
         >
           <i
-            class="fa-solid fa-xmark cursor-pointer h-5"
+            class="fa-solid fa-xmark cursor-pointer h-6 p-4 bg-orange-400 rounded-lg"
             style="color: #ffffff"
           />
         </div>
@@ -157,5 +162,8 @@ export default {
 }
 .transition1sec{
   transition: 1s;
+}
+.shadow-bottom{
+  box-shadow: 0px 6px 12px 0px rgba(37.99999999999999, 170.0000000000002, 225, 0.34);
 }
 </style>
