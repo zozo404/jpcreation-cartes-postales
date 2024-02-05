@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Titles title="Latest News"/>
-    <Home/>
+    <Titles title="Création de cartes postales" class="italianno mt-2"/>
+    <Presentation />
   </div>
 </template>
 <script>

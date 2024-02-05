@@ -15,7 +15,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/jp.png' },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Rubik+Doodle+Shadow&display=swap"
+        href: "https://fonts.googleapis.com/css2?family=Italianno&family=Lexend:wght@300&display=swap"
       }
     ]
   },
@@ -58,12 +58,12 @@ export default {
   build: {
   },
   sanity: {
-    projectId: "4qizwmnw",
+    projectId: "vjs2pfjl",
     minimal: true
   },
   image: {
     sanity: {
-      projectId: "4qizwmnw"
+      projectId: "vjs2pfjl"
     }
   },
   // important for generating error pages

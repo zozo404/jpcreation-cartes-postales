@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-zinc-900 text-white">
+  <div class="bg-zinc-100">
     <Header />
     <Nuxt class="SamsungGA425G:px-8 pt-4" />
     <Footer />
@@ -17,6 +17,9 @@ export default {
 <style>
 html {
   font-family: "Lexend";
+}
+.italianno {
+  font-family: "Italianno";
 }
 .fade-scroll {
   opacity: 0;

@@ -4,10 +4,10 @@
     :class="{ visible: isVisible }"
   >
     <div
-      class="skew-x-[-20deg] w-3/4 md:w-1/3 justify-center items-center bg-green-800"
+      class="justify-center items-center"
     >
       <p
-        class="w-full sm:text-4xl lg:text-4xl text-xl text-gray-300 text-center"
+        class="w-full text-4xl lg:text-4xl text-orange-500 text-center"
       >
         {{ title }}
       </p>
