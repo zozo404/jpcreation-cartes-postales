@@ -4,33 +4,47 @@
 
 // state
 export const state = () => ({
-    exp: [], // Change the state property name to 'exp'
+    cartesPostales: [], 
+    imageSite: [],
 })
 
 // getters
 export const getters = {
-    getExp(state) { // Change the getter name to 'getExp'
-        return state.exp
+    getCartesPostales(state) {
+        return state.cartesPostales
+    },
+    getImageSite(state) {
+        return state.imageSite
     },
 }
 
 // mutations
 export const mutations = {
-    SET_EXP(state, exp) { // Change the mutation name to 'SET_EXP'
-        state.exp = exp
+    SET_CARTESPOSTALES(state, cartesPostales) {
+        state.cartesPostales = cartesPostales
+    },
+    SET_IMAGESITE(state, imageSite) {
+        state.imageSite = imageSite
     },
 }
 
-// actions
-// export const actions = {
-//     async nuxtServerInit({ dispatch }, { $axios }) {
-//         // Change "id_address" to the id of your sanity
-//         // v2022-03-07 = version, you can change
-//         const exp = await $axios.$get('https://id_address.api.sanity.io/v2022-03-07/data/query/production?query=*[_type == "exp"]{id, title, description,"imageId":image{asset,alt}, slug, new, price, stripeUrl}')
 
-//         await dispatch('setExp', exp.result)
-//     },
-//     setExp({ commit }, exp) {
-//         commit('SET_EXP', exp)
-//     },
-// }
+export const actions = {
+    async nuxtServerInit({ dispatch }, { $axios }) {
+        // Change "id_address" to the id of your sanity
+        // v2022-03-07 = version, you can change
+        const cartesPostales = await $axios.$get('https://vjs2pfjl.api.sanity.io/v2022-03-07/data/query/production?query=*[_type == "cartesPostales"]{name, immanquables,"imageId":image{asset,alt}, stripeUrl}')
+
+        const imageSite = await $axios.$get('https://vjs2pfjl.api.sanity.io/v2022-03-07/data/query/production?query=*[_type == "imageSite"]{name, slug, date, "imageId":image{asset,alt},titre,text}')
+
+
+        await dispatch('setCartesPostales', cartesPostales.result)
+        await dispatch('setImageSite', imageSite.result)
+    },
+    setCartesPostales({ commit }, cartesPostales) {
+        commit('SET_CARTESPOSTALES', cartesPostales)
+    },
+    setImageSite({ commit }, imageSite) {
+        commit('SET_IMAGESITE', imageSite)
+    },
+}
