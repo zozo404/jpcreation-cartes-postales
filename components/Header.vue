@@ -133,8 +133,8 @@ export default {
           lien: "/",
         },
         {
-          texte: "Part-1",
-          lien: "/part1",
+          texte: "Mes réalisations",
+          lien: "/mes-realisations",
         },
         {
           texte: "Part-2",
@@ -156,7 +156,7 @@ export default {
 <style>
 /* Ajout de la classe bg-color avec la couleur que vous souhaitez pour le défilement */
 .bg-color {
-  background-color: #000025;
+  background-color: #303030;
   transition: 1s;
   /* Remplacez ceci par la couleur que vous souhaitez appliquer en fond d'écran lors du défilement */
 }

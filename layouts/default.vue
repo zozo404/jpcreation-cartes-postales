@@ -34,6 +34,9 @@ html {
 .fade-scroll.visible {
   opacity: 1;
 }
+.transition1sec{
+  transition: 1s;
+}
 /* width */
 /* ::-webkit-scrollbar {
     width: 20px;

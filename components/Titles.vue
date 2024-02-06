@@ -7,7 +7,7 @@
       class="justify-center items-center"
     >
       <p
-        class="w-full text-4xl lg:text-4xl text-orange-500 text-center"
+        class="w-full text-5xl text-orange-500 text-center"
       >
         {{ title }}
       </p>

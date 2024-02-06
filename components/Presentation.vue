@@ -18,7 +18,7 @@
       <NuxtImg
         :src="CartesPostales.imageId.asset._ref"
         provider="sanity"
-        alt="logo"
+        :alt="CartesPostales.imageId.alt"
         class="w-full"
       />
       <h1 class="pt-2">{{ CartesPostales.name }}</h1>
