@@ -16,14 +16,14 @@ export default {
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Italianno&family=Lexend:wght@300&display=swap"
-      }
+      },
     ]
   },
   script: [
     {
       src: "https://kit.fontawesome.com/5d5fd51001.js",
       crossorigin: "anonymous"
-    }
+    },
   ],
 
   // Global CSS: https://go.nuxtjs.dev/config-css

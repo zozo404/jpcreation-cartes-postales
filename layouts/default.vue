@@ -1,7 +1,7 @@
 <template>
   <div class="bg-zinc-100">
     <Header />
-    <Nuxt class="SamsungGA425G:px-8 pt-4" />
+    <Nuxt class="pt-4" />
     <Footer />
   </div>
 </template>
