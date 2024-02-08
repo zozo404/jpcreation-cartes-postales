@@ -5,8 +5,11 @@
       :class="{ visible: isVisible }"
     >
       <div class="justify-center items-center">
-        <p class="w-full text-5xl text-orange-500 text-center">
+        <p class="italianno w-full text-5xl text-orange-500 text-center">
           {{ title }}
+        </p>
+        <p v-if="subtitle" class="w-full text-base text-center">
+          {{ subtitle }}
         </p>
       </div>
     </div>
@@ -24,6 +27,10 @@ export default {
   mixins: [scrollFadeMixin],
   props: {
     title: {
+      type: String,
+      default: "",
+    },
+    subtitle: {
       type: String,
       default: "",
     },
