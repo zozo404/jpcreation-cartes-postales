@@ -145,16 +145,8 @@ export default {
           lien: "/mes-realisations",
         },
         {
-          texte: "Part-2",
-          lien: "/part2",
-        },
-        {
-          texte: "Part-3",
-          lien: "/part3",
-        },
-        {
-          texte: "Part-4",
-          lien: "/part4",
+          texte: "Contact",
+          lien: "/contact",
         },
       ],
     };

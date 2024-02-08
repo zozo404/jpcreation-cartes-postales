@@ -21,6 +21,9 @@ html {
 .italianno {
   font-family: "Italianno";
 }
+.lexend {
+  font-family: "Lexend";
+}
 .fade-scroll {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;

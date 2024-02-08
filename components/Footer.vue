@@ -42,7 +42,7 @@ export default {
       sections: [
         { id: 1, name: "Home", link: "/" },
         { id: 2, name: "Mes réalisations", link: "mes-réalisations" },
-        { id: 3, name: "Part 2", link: "part2" },
+        { id: 3, name: "Contact", link: "contact" },
       ],
     };
   },
