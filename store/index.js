@@ -35,7 +35,7 @@ export const actions = {
         // v2022-03-07 = version, you can change
         const cartesPostales = await $axios.$get('https://vjs2pfjl.api.sanity.io/v2022-03-07/data/query/production?query=*[_type == "cartesPostales"]{name, immanquables,"imageId":image{asset,alt}, stripeUrl}')
 
-        const imageSite = await $axios.$get('https://vjs2pfjl.api.sanity.io/v2022-03-07/data/query/production?query=*[_type == "imageSite"]{name, slug, date, "imageId":image{asset,alt},titre,text}')
+        const imageSite = await $axios.$get('https://vjs2pfjl.api.sanity.io/v2022-03-07/data/query/production?query=*[_type == "imageSite"]{name, "imageId":image{asset,alt}, stripeUrl}')
 
 
         await dispatch('setCartesPostales', cartesPostales.result)

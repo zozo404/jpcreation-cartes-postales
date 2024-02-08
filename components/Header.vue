@@ -11,14 +11,18 @@
       <!-- logo -->
       <NuxtLink to="/" class="flex justify-center lg:col-span-1 h-full">
         <span class="sr-only">Logo</span>
-        <!-- <NuxtImg
-          :src="Logo.images[0].asset._ref"
-          provider="sanity"
-          alt="logo"
-          class="h-full"
-          sizes="xs:100vw"
-        /> -->
-        <NuxtImg src="jp.png" alt="logo" class="h-16" sizes="xs:100vw" />
+        <div v-if="Logo.imageId.asset._ref">
+          <NuxtImg
+            :src="Logo.imageId.asset._ref"
+            provider="sanity"
+            alt="logo"
+            class="h-full"
+            sizes="xs:100vw"
+          />
+        </div>
+        <div v-else>
+          <NuxtImg src="jp.png" alt="logo" class="h-16" sizes="xs:100vw" />
+        </div>
       </NuxtLink>
       <div
         class="w-full h-full pr-8 lg:hidden flex justify-end items-center"
@@ -60,14 +64,18 @@
         <!-- logo -->
         <NuxtLink to="/" class="flex justify-center lg:col-span-1 h-full">
           <span class="sr-only">Logo</span>
-          <!-- <NuxtImg
-            :src="Logo.images[0].asset._ref"
-            provider="sanity"
-            alt="logo"
-            class="h-full"
-            sizes="xs:100vw"
-          /> -->
-          <NuxtImg src="jp.png" alt="logo" class="h-16" sizes="xs:100vw" />
+          <div v-if="Logo.imageId.asset._ref">
+            <NuxtImg
+              :src="Logo.imageId.asset._ref"
+              provider="sanity"
+              alt="logo"
+              class="h-full"
+              sizes="xs:100vw"
+            />
+          </div>
+          <div v-else>
+            <NuxtImg src="jp.png" alt="logo" class="h-16" sizes="xs:100vw" />
+          </div>
         </NuxtLink>
         <!-- hamburger icon -->
         <div
@@ -160,10 +168,11 @@ export default {
   transition: 1s;
   /* Remplacez ceci par la couleur que vous souhaitez appliquer en fond d'écran lors du défilement */
 }
-.transition1sec{
+.transition1sec {
   transition: 1s;
 }
-.shadow-bottom{
-  box-shadow: 0px 6px 12px 0px rgba(37.99999999999999, 170.0000000000002, 225, 0.34);
+.shadow-bottom {
+  box-shadow: 0px 6px 12px 0px
+    rgba(37.99999999999999, 170.0000000000002, 225, 0.34);
 }
 </style>

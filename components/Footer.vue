@@ -23,7 +23,10 @@
         <NuxtLink to="mentions-legales">Legal Mention</NuxtLink> | All rights
         reserved
       </p>
-      &copy; 2023-2024 <a href="https://zozoy.fr/" target="_blank">zozoy.fr</a>
+      <p class="fade-scroll" :class="{ visible: isVisible }">
+        &copy; 2023-2024
+        <a href="https://zozoy.fr/" target="_blank">zozoy.fr</a>
+      </p>
     </div>
   </footer>
 </template>
