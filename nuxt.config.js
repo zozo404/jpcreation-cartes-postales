@@ -1,29 +1,29 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Title',
+    title: 'JP CREATION - cartes postales',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Content of website' },
+      { hid: 'description', name: 'description', content: 'Création de cartes postales. Jeune, je dessinais naturellement bien et mes dessins ou caricatures de profs plaisaient à mes camarades de classe. Mes parents, persuadés d’héberger le futur Picasso, m’ont payé des cours de dessin par correspondance. Trop difficiles pour l’enfant que j’étais, j’ai troqué mon pinceau contre la pratique de nombreux sports et ceci pendant plusieurs décennies; si bien que pendant 41 ans je n’ai pas touché un crayon. Pas le moindre dessin !' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/jp.png' },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Rubik+Doodle+Shadow&display=swap"
-      }
+        href: "https://fonts.googleapis.com/css2?family=Italianno&family=Lexend:wght@300&display=swap"
+      },
     ]
   },
   script: [
     {
       src: "https://kit.fontawesome.com/5d5fd51001.js",
       crossorigin: "anonymous"
-    }
+    },
   ],
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -58,12 +58,12 @@ export default {
   build: {
   },
   sanity: {
-    projectId: "4qizwmnw",
+    projectId: "vjs2pfjl",
     minimal: true
   },
   image: {
     sanity: {
-      projectId: "4qizwmnw"
+      projectId: "vjs2pfjl"
     }
   },
   // important for generating error pages

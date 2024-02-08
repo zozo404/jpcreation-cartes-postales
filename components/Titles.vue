@@ -1,16 +1,20 @@
 <template>
-  <div
-    class="flex flex-col justify-center items-center pt-4 pb-4 fade-scroll my-2"
-    :class="{ visible: isVisible }"
-  >
+  <div>
     <div
-      class="skew-x-[-20deg] w-3/4 md:w-1/3 justify-center items-center bg-green-800"
+      class="flex flex-col justify-center items-center pt-4 pb-4 fade-scroll my-2"
+      :class="{ visible: isVisible }"
     >
-      <p
-        class="w-full sm:text-4xl lg:text-4xl text-xl text-gray-300 text-center"
-      >
-        {{ title }}
-      </p>
+      <div class="justify-center items-center">
+        <p class="italianno w-full text-5xl text-orange-500 text-center">
+          {{ title }}
+        </p>
+        <p v-if="subtitle" class="w-full text-base text-center">
+          {{ subtitle }}
+        </p>
+      </div>
+    </div>
+    <div class="flex items-center justify-center my-14">
+      <hr class="w-20 h-1 bg-orange-500 mt-1" />
     </div>
   </div>
 </template>
@@ -23,6 +27,10 @@ export default {
   mixins: [scrollFadeMixin],
   props: {
     title: {
+      type: String,
+      default: "",
+    },
+    subtitle: {
       type: String,
       default: "",
     },
