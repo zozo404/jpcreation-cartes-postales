@@ -1,6 +1,6 @@
 <template>
   <header
-    class="w-full z-20 sticky top-0 text-white bg-zinc-200 transition1sec shadow-bottom"
+    class="w-full z-20 sticky top-0 text-white bg-white transition1sec shadow-bottom"
     :class="{ 'bg-color': isScrolled }"
   >
     <!-- nav desktop -->
@@ -29,7 +29,7 @@
         @click="toggle"
       >
         <i
-          class="fa-solid fa-bars cursor-pointer h-5 p-4 bg-orange-400 rounded-lg"
+          class="fa-solid fa-bars cursor-pointer h-5 p-3 bg-orange-400 rounded-lg"
         />
       </div>
       <!-- navigation -->
@@ -83,7 +83,7 @@
           @click="toggle"
         >
           <i
-            class="fa-solid fa-xmark cursor-pointer h-6 p-4 bg-orange-400 rounded-lg"
+            class="fa-solid fa-xmark cursor-pointer h-6 p-4 sm:p-3 bg-orange-400 rounded-lg"
             style="color: #ffffff"
           />
         </div>

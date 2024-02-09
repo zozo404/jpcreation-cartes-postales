@@ -1,6 +1,9 @@
 <template>
   <section>
-    <div class="italic leading-8 px-4 text-[15px] text-justify pb-14">
+    <div
+      class="italic leading-8 px-4 text-[15px] text-justify pb-14 fade-scroll"
+      :class="{ visible: isVisible }"
+    >
       <p>
         Jeune, je dessinais naturellement bien et mes dessins ou caricatures de
         profs plaisaient à mes camarades de classe.
@@ -14,21 +17,37 @@
         touché un crayon. Pas le moindre dessin !
       </p>
     </div>
-    <div class="text-center">
+    <div
+      class="text-center sm:flex items-center flex-col fade-scroll"
+      :class="{ visible: isVisible }"
+    >
       <NuxtImg
         :src="CartesPostales.imageId.asset._ref"
         provider="sanity"
         :alt="CartesPostales.imageId.alt"
-        class="w-full"
+        class="w-full shadow-none transition1sec shadow-right-bottom sm:w-4/5"
+        @click="showFullScreenImage(CartesPostales.imageId.asset._ref)"
       />
       <h1 class="pt-2">{{ CartesPostales.name }}</h1>
+    </div>
+    <!-- image pop-up -->
+    <div v-if="isFullScreen" class="full-screen-image flex-col">
+      <span class="close" @click="isFullScreen = false">&times;</span>
+      <NuxtImg
+        provider="sanity"
+        class="modal-content"
+        :src="CartesPostales.imageId.asset._ref"
+      />
+      <p class="text-white">{{ CartesPostales.name }}</p>
     </div>
   </section>
 </template>
 
 <script>
+import scrollFadeMixin from "~/mixins/scrollFadeMixin";
 import { mapGetters } from "vuex";
 export default {
+  mixins: [scrollFadeMixin],
   name: "Presentation",
   computed: {
     ...mapGetters(["getCartesPostales"]),
@@ -41,5 +60,3 @@ export default {
 };
 </script>
 
-<style>
-</style>

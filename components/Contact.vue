@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Main content -->
-    <main class="container mx-auto my-4 px-4 2xl:px-24 3xl:px-4 md:mb-0">
+    <main class="container mx-auto my-4 px-4 2xl:px-24 3xl:px-4 md:mb-0 pb-8">
       <div class="text-center pb-4 xl:pb-12">
         <p class="mb-8 text-2xl">Nous sommes à votre écoute !</p>
       </div>
@@ -14,7 +14,7 @@
             <!-- Nom et prénom -->
             <div class="mb-4">
               <label for="fullName" class="block text-base"
-                >Nom et prénom*</label
+                >Nom et prénom<span class="text-red-600">*</span></label
               >
               <input
                 id="fullName"
@@ -27,7 +27,7 @@
 
             <!-- Adresse e-mail -->
             <div class="mb-4">
-              <label for="email" class="block text-base">Email*</label>
+              <label for="email" class="block text-base">Email<span class="text-red-600">*</span></label>
               <input
                 id="email"
                 v-model="email"
@@ -39,7 +39,7 @@
 
             <!-- object -->
             <div class="mb-4">
-              <label for="object" class="block text-base">Objet*</label>
+              <label for="object" class="block text-base">Objet<span class="text-red-600">*</span></label>
               <input
                 id="object"
                 v-model="object"
@@ -51,7 +51,7 @@
 
             <!-- Message -->
             <div class="mb-4">
-              <label for="message" class="block text-base">Message*</label>
+              <label for="message" class="block text-base">Message<span class="text-red-600">*</span></label>
               <textarea
                 id="message"
                 v-model="message"
@@ -88,7 +88,7 @@
       <!-- Coordonnées -->
       <section class="mt-8 text-center">
         <div class="pb-4 lg:pb-0">
-          <hr class="border-t-2 border-white mb-6 mx-auto w-16 opacity-50" />
+          <hr class="border-t-2 border-orange-500 mb-6 mx-auto w-16 opacity-50" />
           <h2 class="text-2xl font-bold mb-4">Détails supplémentaires</h2>
           <div class="text-lg flex flex-col gap-2">
             <a href="tel:+33 6 75 53 72 52" target="_blank">

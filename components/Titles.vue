@@ -13,7 +13,7 @@
         </p>
       </div>
     </div>
-    <div class="flex items-center justify-center my-14">
+    <div v-if="barre" class="flex items-center justify-center my-14">
       <hr class="w-20 h-1 bg-orange-500 mt-1" />
     </div>
   </div>
@@ -38,6 +38,10 @@ export default {
       type: String,
       default: "",
     },
+    barre: {
+      type: Boolean,
+      default: true,
+    }
   },
 };
 </script>
