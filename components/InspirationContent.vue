@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="italic leading-8 px-4 text-[15px] text-justify pb-14 text-base SamsungGA425G:px-8"
+      class="italic leading-8 px-4 text-[15px] text-justify pb-14 text-base SamsungGA425G:px-8 md:px-16"
     >
       <p>
         L’idée des 2 personnages à droite de chacune de mes cartes postales est
