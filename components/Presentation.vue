@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="italic leading-8 px-4 text-[15px] text-justify pb-14 fade-scroll"
+      class="italic leading-8 px-4 text-[15px] md:text-[17px] text-justify pb-14 fade-scroll"
       :class="{ visible: isVisible }"
     >
       <p>
@@ -25,7 +25,7 @@
         :src="CartesPostales.imageId.asset._ref"
         provider="sanity"
         :alt="CartesPostales.imageId.alt"
-        class="w-full shadow-none transition1sec shadow-right-bottom sm:w-4/5"
+        class="w-full shadow-none transition1sec shadow-right-bottom sm:w-4/5 md:w-[70%] cursor-pointer"
         @click="showFullScreenImage(CartesPostales.imageId.asset._ref)"
       />
       <h1 class="pt-2">{{ CartesPostales.name }}</h1>

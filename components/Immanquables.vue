@@ -1,19 +1,21 @@
 <template>
   <section v-if="CartesPostales">
-    <div
-      class="text-center sm:flex items-center flex-col fade-scroll"
-      :class="{ visible: isVisible }"
-      v-for="carte in CartesPostales"
-      :key="carte.id"
-    >
-      <NuxtImg
-        :src="carte.imageId.asset._ref"
-        provider="sanity"
-        :alt="carte.imageId.alt"
-        class="w-full shadow-none transition1sec shadow-right-bottom sm:w-4/5"
-        @click="showFullScreenImageAll(carte)"
-      />
-      <h1 class="pt-2">{{ carte.name }}</h1>
+    <div class="flex flex-wrap justify-evenly">
+      <div
+        class="text-center sm:flex items-center flex-col fade-scroll md:w-[50%]"
+        :class="{ visible: isVisible }"
+        v-for="carte in CartesPostales"
+        :key="carte.id"
+      >
+        <NuxtImg
+          :src="carte.imageId.asset._ref"
+          provider="sanity"
+          :alt="carte.imageId.alt"
+          class="w-full shadow-none transition1sec shadow-right-bottom sm:w-4/5 cursor-pointer"
+          @click="showFullScreenImageAll(carte)"
+        />
+        <h1 class="pt-2 pb-4">{{ carte.name }}</h1>
+      </div>
     </div>
 
     <BtnRealisations />

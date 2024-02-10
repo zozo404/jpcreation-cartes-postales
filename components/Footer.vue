@@ -41,7 +41,7 @@ export default {
     return {
       sections: [
         { id: 1, name: "Home", link: "/" },
-        { id: 2, name: "Mes réalisations", link: "mes-réalisations" },
+        { id: 2, name: "Mes réalisations", link: "mes-realisations" },
         { id: 3, name: "Contact", link: "contact" },
       ],
     };
