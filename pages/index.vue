@@ -12,7 +12,7 @@
     />
     <Immanquables class="SamsungGA425G:px-8" />
     <Titles title="À propos" class="italianno mt-16" />
-    <Propos />
+    <Propos class="pb-16"/>
     <Inspiration />
   </div>
 </template>

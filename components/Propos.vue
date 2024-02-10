@@ -8,7 +8,7 @@
         :src="CartesPostales.imageId.asset._ref"
         provider="sanity"
         :alt="CartesPostales.imageId.alt"
-        class="w-full shadow-none transition1sec shadow-right-bottom sm:w-4/5 md:w-[70%] cursor-pointer"
+        class="w-full shadow-none transition1sec shadow-right-bottom sm:w-4/5 md:w-[70%] 2xl:w-[50%] cursor-pointer"
         @click="showFullScreenImage(CartesPostales.imageId.asset._ref)"
       />
       <h1 class="pt-2">{{ CartesPostales.name }}</h1>

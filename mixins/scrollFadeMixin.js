@@ -6,6 +6,7 @@ export default {
       isFullScreen: false,
       fullScreenImageUrl: "",
       fullScreenImageName: "",
+      fullScreenImageCollectionName: "",
 
     };
   },
@@ -28,6 +29,12 @@ export default {
       this.isFullScreen = true;
       this.fullScreenImageUrl = imageUrl.imageId.asset._ref;
       this.fullScreenImageName = imageUrl.name
+    },
+    showFullScreenImageCollection(collection) {
+      // View image in full screen
+      this.isFullScreen = true;
+      this.fullScreenImageUrl = collection.imageId.asset._ref;
+      this.fullScreenImageCollectionName = collection.name
     },
   },
   mounted() {

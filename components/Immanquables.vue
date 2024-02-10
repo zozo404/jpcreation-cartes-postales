@@ -11,7 +11,7 @@
           :src="carte.imageId.asset._ref"
           provider="sanity"
           :alt="carte.imageId.alt"
-          class="w-full shadow-none transition1sec shadow-right-bottom sm:w-4/5 cursor-pointer"
+          class="w-full shadow-none transition1sec shadow-right-bottom sm:w-4/5 2xl:w-[50%] cursor-pointer"
           @click="showFullScreenImageAll(carte)"
         />
         <h1 class="pt-2 pb-4">{{ carte.name }}</h1>
