@@ -1,6 +1,6 @@
 <template>
   <header
-    class="w-full z-20 sticky top-0 bg-white shadow-bottom"
+    class="w-full z-20 sticky top-0 bg-white shadow-bottom transition1sec"
     :class="{ 'bg-color': isScrolled }"
   >
     <!-- nav desktop -->
