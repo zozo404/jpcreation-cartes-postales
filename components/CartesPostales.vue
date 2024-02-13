@@ -17,7 +17,7 @@
           :src="carte.imageId.asset._ref"
           provider="sanity"
           :alt="carte.imageId.alt"
-          class="w-fit rounded-md cursor-pointer"
+          class="w-11/12 md:w-[60%] rounded-md cursor-pointer lg:max-h-[23rem] xl:max-h-[30rem] 2xl:max-h-[35rem] 3xl:max-h-[47rem]"
           @click="showFullScreenImageCollection(carte)"
         />
         <h1 class="py-4 text-base">{{ carte.name }}</h1>

@@ -6,7 +6,7 @@
         <p class="mb-8 text-2xl">Nous sommes à votre écoute !</p>
       </div>
       <!-- Contact form -->
-      <section class="lg:flex lg:flex-wrap lg:justify-around">
+      <section class="lg:flex lg:flex-wrap lg:justify-around xl:pr-20">
         <div
           class="lg:flex-grow 3xl:flex-grow-0 3xl:w-2/6 flex flex-col lg:pr-4 md:items-center"
         >
@@ -72,10 +72,10 @@
             </div>
           </form>
         </div>
-        <div class="hidden lg:block">
+        <div class="hidden xl:block">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d94019.6345440772!2d2.32285572128804!3d42.57411166584408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aff8c5b46cf29d%3A0xae3c06ca22e5aa6f!2s7%20Chem.%20du%20Mas%20Bellonte%2C%2066820%20Fuilla!5e0!3m2!1sfr!2sfr!4v1707410304488!5m2!1sfr!2sfr"
-            width="600"
+            width="450"
             height="450"
             allowfullscreen=""
             loading="lazy"
@@ -110,7 +110,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            class="w-full md:w-3/4 mt-2 lg:hidden border-2 border-orange-400 rounded-md"
+            class="w-full md:w-3/4 mt-2 xl:hidden border-2 border-orange-400 rounded-md"
           />
         </div>
       </section>

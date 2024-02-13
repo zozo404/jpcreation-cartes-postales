@@ -1,6 +1,6 @@
 <template>
   <header
-    class="w-full z-20 sticky top-0 text-black bg-white transition1sec shadow-bottom"
+    class="w-full z-20 sticky top-0 bg-white shadow-bottom"
     :class="{ 'bg-color': isScrolled }"
   >
     <!-- nav desktop -->
@@ -9,7 +9,7 @@
       aria-label="Top"
     >
       <!-- logo -->
-      <NuxtLink to="/" class="flex justify-center md:col-span-1 h-full">
+      <NuxtLink to="/" class="flex justify-start pl-12 md:col-span-1 h-full">
         <span class="sr-only">Logo</span>
         <div v-if="Logo.imageId.asset._ref">
           <NuxtImg
@@ -31,7 +31,7 @@
       >
         <div @click="toggle">
           <i
-            class="fa-solid fa-bars cursor-pointer h-5 p-3 bg-orange-400 rounded-md"
+            class="fa-solid fa-bars cursor-pointer h-5 p-3 bg-orange-400 rounded-md text-white"
           />
         </div>
         <svg
@@ -48,7 +48,7 @@
       </div>
       <!-- navigation -->
       <div
-        class="hidden col-span-2 md:col-span-1 md:col-start-2 md:row-start-1 md:flex flex-row gap-3 xl:gap-4 items-center"
+        class="hidden col-span-2 md:col-span-1 md:col-start-2 md:row-start-1 md:flex flex-row gap-3 xl:gap-4 items-center lg:justify-end lg:pr-8"
       >
         <div
           v-for="lien in liens"
@@ -58,7 +58,7 @@
           <NuxtLink
             key="Index"
             :to="lien.lien"
-            class="text-base md:text-xl 2xl:text-2xl font-medium hover:text-[#68C3D4] transition"
+            class="text-base md:text-xl 2xl:text-2xl font-medium text-cyan-500 hover:text-orange-500 transition"
             @click="toggle"
           >
             {{ lien.texte }}
@@ -137,7 +137,7 @@
         <NuxtLink
           key="Index"
           :to="lien.lien"
-          class="text-2xl font-medium hover:text-[#68C3D4] transition"
+          class="text-2xl font-medium hover:text-[#68C3D4] transition text-white"
         >
           {{ lien.texte }}
         </NuxtLink>

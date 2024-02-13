@@ -2,7 +2,7 @@
   <div>
     <Titles
       title="Création de cartes postales"
-      class="italianno mt-2 pb-4 SamsungGA425G:px-8"
+      class="italianno mt-2 py-4 SamsungGA425G:px-8"
       :barre='false'
     />
     <Presentation class="SamsungGA425G:px-8" />

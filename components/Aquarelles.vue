@@ -17,7 +17,7 @@
           :src="aquarelle.imageId.asset._ref"
           provider="sanity"
           :alt="aquarelle.imageId.alt"
-          class="w-11/12 rounded-md cursor-pointer"
+          class="w-11/12 rounded-md cursor-pointer lg:max-h-[23rem] xl:max-h-[30rem] 2xl:max-h-[35rem] 3xl:max-h-[47rem]"
           @click="showFullScreenImageCollection(aquarelle)"
         />
         <h1 class="py-4 text-base">{{ aquarelle.name }}</h1>

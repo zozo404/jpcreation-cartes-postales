@@ -11,13 +11,13 @@
       <div
         v-for="nu in nus"
         :key="nu.id"
-        class="text-center flex flex-col items-center bg-white pt-6 px-4 shadow-none transition1sec shadow-right-bottom rounded-md md:w-[30%] md:flex-row md:flex-wrap md:justify-center md:h-fit"
+        class="text-center flex flex-col items-center bg-white pt-6 px-4 shadow-none transition1sec shadow-right-bottom rounded-md md:w-[30%] md:flex-wrap md:justify-center md:h-fit"
       >
         <NuxtImg
           :src="nu.imageId.asset._ref"
           provider="sanity"
           :alt="nu.imageId.alt"
-          class="w-11/12 rounded-md cursor-pointer"
+          class="w-11/12 md:w-[60%] rounded-md cursor-pointer lg:max-h-[23rem] xl:max-h-[30rem] 2xl:max-h-[35rem] 3xl:max-h-[47rem]"
           @click="showFullScreenImageCollection(nu)"
         />
         <h1 class="py-4 text-base">{{ nu.name }}</h1>
