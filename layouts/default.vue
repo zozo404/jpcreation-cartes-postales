@@ -73,7 +73,7 @@ html {
 }
 
 .full-screen-image img {
-  max-width: 100%;
+  max-width: 90%;
   max-height: 90%;
 }
 

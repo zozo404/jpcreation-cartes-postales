@@ -12,7 +12,7 @@
           :src="produit.imageId.asset._ref"
           provider="sanity"
           :alt="produit.imageId.alt"
-          class=" rounded-md cursor-pointer"
+          class="rounded-md cursor-pointer"
           @click="showFullScreenImageCollection(produit)"
         />
         <h1 class="py-4 text-base">{{ produit.name }}</h1>

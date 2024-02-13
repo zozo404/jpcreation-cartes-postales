@@ -5,7 +5,7 @@
   >
     <!-- nav desktop -->
     <nav
-      class="md:max-h-28 max-h-20 w-full py-2 md:py-6 grid grid-cols-2 md:grid-cols-2 grid-rows-1 items-center justify-between md:border-none"
+      class="md:max-h-28 max-h-20 w-full py-2 md:py-6 grid grid-cols-2 md:grid-cols-2 grid-rows-1 items-center justify-between md:border-none lg:px-24 2xl:px-60"
       aria-label="Top"
     >
       <!-- logo -->
@@ -182,7 +182,7 @@ export default {
       isActive: true,
       liens: [
         {
-          texte: "Home",
+          texte: "Accueil",
           lien: "/",
         },
         {

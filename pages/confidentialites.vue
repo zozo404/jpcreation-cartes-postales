@@ -1,8 +1,8 @@
 <template>
   <div class="my-4">
     <h1 class="text-4xl md:text-5xl font-extrabold mb-12 font-sans italianno text-center">
-      Mentions Légales
+      Politique de Confidentialité
     </h1>
-    <LegalMention />
+    <Confid />
   </div>
 </template>
