@@ -1,5 +1,5 @@
 <template>
-  <section class="md:flex justify-center items-center gap-8 md:px-20">
+  <section class="md:flex justify-center items-center gap-8 md:px-20 xl:px-48 2xl:px-64">
     <div
       class="italic leading-8 px-4 text-[15px] md:text-[17px] text-justify pb-14 fade-scroll md:w-[60rem]"
       :class="{ visible: isVisible }"
@@ -25,7 +25,7 @@
         :src="CartesPostales.imageId.asset._ref"
         provider="sanity"
         :alt="CartesPostales.imageId.alt"
-        class="w-full shadow-none transition1sec shadow-right-bottom sm:w-4/5 md:w-auto 2xl:w-[60%] cursor-pointer"
+        class="rounded-md cursor-pointer 3xl:max-w-[32rem] shadow-none shadow-right-bottom transition1sec"
         @click="showFullScreenImage(CartesPostales.imageId.asset._ref)"
       />
       <h1 class="pt-2">{{ CartesPostales.name }}</h1>

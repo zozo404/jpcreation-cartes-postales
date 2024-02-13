@@ -1,50 +1,47 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="flex items-center justify-center h-screen">
-    <h1 v-if="error.statusCode === 404">
+    <div v-if="error.statusCode === 404">
+      <div class="flex justify-center">
+        <NuxtImg class="w-[40%] md:w-[60%]" src="/jp.png" />
+      </div>
       <div
         class="text-center container mx-auto my-14 flex items-center justify-center md:my-24 lg:my"
       >
         <div class="text-center">
-          <h1 class="text-6xl font-bold font-rubik-doodle-shadow animation-target">
+          <h1 class="text-6xl font-bold italianno animation-target">
             <span class="letter" style="opacity: 0">4</span>
             <span class="letter" style="opacity: 0">0</span>
             <span class="letter" style="opacity: 0">4</span>
           </h1>
-          <p class="text-xl font-semibold">Page not found</p>
-          <p>
-            The page you are looking for might be under construction or does not
-            exist.
-          </p>
+          <p class="text-2xl font-semibold">La page n'existe pas</p>
+          <p>Veuillez retourner sur le site avec le bouton</p>
           <a
             href="/"
-            class="text-red-600 text-2xl hover:underline mt-4 block animate-bounce"
+            class="text-orange-500 text-2xl hover:underline mt-4 block animate-bounce"
           >
-            Go back home
+            Retour au site
           </a>
         </div>
       </div>
-    </h1>
-    <h1 v-else>
+    </div>
+    <div v-else>
       <div
         class="text-center container mx-auto my-14 flex items-center justify-center md:my-24 lg:my"
       >
         <div class="text-center">
           <h1 class="text-6xl font-bold">An error occurred</h1>
-          <p class="text-xl font-semibold">Page not found</p>
-          <p class="mt-4">
-            The page you are looking for might be under construction or does not
-            exist.
-          </p>
+          <p class="text-xl font-semibold">La page n'existe pas</p>
+          <p class="mt-4">Veuillez retourner sur le site avec le bouton</p>
           <a
             href="/"
-            class="text-red-600 hover:underline mt-4 block animate-bounce"
+            class="text-orange-500 hover:underline mt-4 block animate-bounce"
           >
-            Go back home
+            Retour au site
           </a>
         </div>
       </div>
-    </h1>
+    </div>
   </div>
 </template>
 
@@ -62,7 +59,7 @@ export default {
       anime({
         targets: ".animation-target .letter",
         opacity: [0, 1],
-        easing: 'easeInOutQuad',
+        easing: "easeInOutQuad",
         delay: anime.stagger(500), // Délai entre chaque lettre
         duration: 2000,
         loop: true,

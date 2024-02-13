@@ -20,8 +20,7 @@
     <!-- copyrights -->
     <div class="text-center py-2">
       <p class="fade-scroll" :class="{ visible: isVisible }">
-        <NuxtLink to="mentions-legales">Legal Mention</NuxtLink> | All rights
-        reserved
+        <NuxtLink to="mentions-legales">Mentions Légales</NuxtLink> | <NuxtLink to="confidentialites">Politique de Confidentialité</NuxtLink>
       </p>
       <p class="fade-scroll" :class="{ visible: isVisible }">
         &copy; 2023-2024

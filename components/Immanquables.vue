@@ -1,8 +1,8 @@
 <template>
   <section v-if="CartesPostales">
-    <div class="flex flex-wrap justify-evenly">
+    <div class="flex flex-wrap justify-evenly items-center">
       <div
-        class="text-center sm:flex items-center flex-col fade-scroll md:w-[50%]"
+        class="text-center flex flex-col items-center pt-6 px-4 shadow-none transition1sec rounded-md md:w-[23%] md:h-fit"
         :class="{ visible: isVisible }"
         v-for="carte in CartesPostales"
         :key="carte.id"
@@ -11,7 +11,7 @@
           :src="carte.imageId.asset._ref"
           provider="sanity"
           :alt="carte.imageId.alt"
-          class="w-full shadow-none transition1sec shadow-right-bottom sm:w-4/5 2xl:w-[50%] cursor-pointer"
+          class="rounded-md cursor-pointer shadow-none shadow-right-bottom transition1sec"
           @click="showFullScreenImageAll(carte)"
         />
         <h1 class="pt-2 pb-4">{{ carte.name }}</h1>
