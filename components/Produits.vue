@@ -1,26 +1,21 @@
 <template>
-  <section v-if="animaux">
-    <Titles
-      title="Mes animaux dessinés"
-      class="mt-16 SamsungGA425G:px-8"
-      subtitle="Je peux dessiner vos animaux préféres sur commande !"
-    />
+  <section v-if="produits">
     <div
       class="flex flex-col gap-4 px-8 md:flex-row md:flex-wrap md:items-center md:justify-evenly"
     >
       <div
-        v-for="animal in animaux"
-        :key="animal.id"
-        class="text-center flex flex-col items-center bg-white pt-6 px-4 shadow-none transition1sec shadow-right-bottom rounded-md md:w-[30%] md:h-fit"
+        v-for="produit in produits"
+        :key="produit.id"
+        class="text-center flex flex-col items-center bg-white pt-6 px-4 shadow-none transition1sec shadow-right-bottom rounded-md md:w-[23%] md:h-fit"
       >
         <NuxtImg
-          :src="animal.imageId.asset._ref"
+          :src="produit.imageId.asset._ref"
           provider="sanity"
-          :alt="animal.imageId.alt"
-          class="w-11/12 md:w-[60%] rounded-md cursor-pointer lg:max-h-[23rem] xl:max-h-[30rem] 2xl:max-h-[35rem] 3xl:max-h-[47rem]"
-          @click="showFullScreenImageCollection(animal)"
+          :alt="produit.imageId.alt"
+          class=" rounded-md cursor-pointer"
+          @click="showFullScreenImageCollection(produit)"
         />
-        <h1 class="py-4 text-base">{{ animal.name }}</h1>
+        <h1 class="py-4 text-base">{{ produit.name }}</h1>
       </div>
       <!-- image pop-up -->
       <div v-if="isFullScreen" class="full-screen-image flex-col">
@@ -39,10 +34,10 @@
 <script>
 import scrollFadeMixin from "~/mixins/scrollFadeMixin";
 export default {
-  name: "Animaux",
+  name: "Produits",
   mixins: [scrollFadeMixin],
   props: {
-    animaux: {
+    produits: {
       default: null,
       type: Array,
     },

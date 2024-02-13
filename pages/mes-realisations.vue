@@ -1,10 +1,34 @@
 <template>
   <section class="pb-16">
-    <Animaux :animaux="Animaux" />
-    <CartesPostales :cartes="CartesPostales" />
-    <Aquarelles :aquarelles="Aquarelles" />
-    <Divers :divers="Divers" />
-    <Nus :nus="Nus" />
+    <Titles
+      title="Mes animaux dessinés"
+      class="mt-16 SamsungGA425G:px-8"
+      subtitle="Je peux dessiner vos animaux préférés sur commande !"
+    />
+    <Produits :produits="Animaux" />
+    <Titles
+      title="Mes Cartes Postales dessinés"
+      class="mt-16 SamsungGA425G:px-8"
+      subtitle="Je peux dessiner vos cartes postalés sur commande !"
+    />
+    <Produits :produits="CartesPostales" />
+    <Titles
+      title="Mes Aquarelles dessinées"
+      class="mt-16 SamsungGA425G:px-8"
+      subtitle="Je peux dessiner vos animaux préférées sur commande !"
+    />
+    <Produits :produits="Aquarelles" />
+    <Titles
+      title="Divers"
+      class="mt-16 SamsungGA425G:px-8"
+    />
+    <Produits :produits="Divers" />
+    <Titles
+      title="Mes Nus dessinés"
+      class="mt-16 SamsungGA425G:px-8"
+      subtitle="Je peux dessiner vos nus sur commande !"
+    />
+    <Produits :produits="Nus" />
   </section>
 </template>
 

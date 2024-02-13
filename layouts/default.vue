@@ -74,7 +74,7 @@ html {
 
 .full-screen-image img {
   max-width: 100%;
-  max-height: 44rem;
+  max-height: 90%;
 }
 
 .full-screen-image .close {
