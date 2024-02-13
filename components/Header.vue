@@ -94,7 +94,7 @@
               :src="Logo.imageId.asset._ref"
               provider="sanity"
               alt="logo"
-              class="h-16"
+              class="h-16 SamsungGA425G:pl-4 iphoneSE:pl-2 iphone14proMax:pl-0 iphone14proMax:pr-4 md:pr-0"
               sizes="xs:100vw"
             />
           </div>
