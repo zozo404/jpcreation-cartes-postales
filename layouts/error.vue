@@ -3,7 +3,7 @@
   <div class="flex items-center justify-center h-screen">
     <div v-if="error.statusCode === 404">
       <div class="flex justify-center">
-        <NuxtImg class="w-[40%] md:w-[60%]" src="/jp.png" />
+        <NuxtImg class="w-[40%] md:w-[60%]" src="https://cdn.sanity.io/images/vjs2pfjl/production/8e15e6777dc423ec9323b80eb5d530f074cdb05c-429x282.png?w=2000&fit=max&auto=format" />
       </div>
       <div
         class="text-center container mx-auto my-14 flex items-center justify-center md:my-24 lg:my"
