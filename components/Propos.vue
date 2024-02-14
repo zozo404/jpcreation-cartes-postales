@@ -24,7 +24,7 @@
       </div>
     </div>
     <div
-      class="italic leading-8 px-4 text-[15px] text-justify pb-14 text-base SamsungGA425G:px-8 md:w-1/2"
+      class="italic leading-8 px-4 text-[15px] text-justify pb-14 text-base SamsungGA425G:px-8 md:w-1/2 2xl:pr-[10rem]"
     >
       <p>
         A l’aube de la retraite, je me suis inscrit dans un club de dessin avec
