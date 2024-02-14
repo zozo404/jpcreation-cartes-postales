@@ -27,6 +27,7 @@
                 type="text"
                 name="fullName"
                 class="mt-1 p-2 border rounded-md w-full"
+                required
               />
             </div>
 
@@ -41,6 +42,7 @@
                 type="email"
                 name="email"
                 class="mt-1 p-2 border rounded-md w-full"
+                required
               />
             </div>
 
@@ -55,6 +57,7 @@
                 type="text"
                 name="object"
                 class="mt-1 p-2 border rounded-md w-full"
+                required
               />
             </div>
 
@@ -69,6 +72,7 @@
                 name="message"
                 rows="4"
                 class="mt-1 p-2 border rounded-md w-full"
+                required
               ></textarea>
             </div>
 
@@ -167,15 +171,6 @@ export default {
       // Mettez ici la logique pour envoyer le formulaire (par exemple, une requête API)
       // eslint-disable-next-line no-console
       console.log("Formulaire soumis !");
-    },
-    onClick(e) {
-      e.preventDefault();
-      grecaptcha.enterprise.ready(async () => {
-        const token = await grecaptcha.enterprise.execute(
-          "6Le74XEpAAAAAGfz5ThE6jQJhgIv1RI18InMcKG2",
-          { action: "LOGIN" }
-        );
-      });
     },
   },
 };
