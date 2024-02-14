@@ -24,6 +24,12 @@ export default {
       src: "https://kit.fontawesome.com/5d5fd51001.js",
       crossorigin: "anonymous"
     },
+    {
+      hid: 'captcha',
+      src: 'https://www.google.com/recaptcha/api.js',
+      defer: true,
+      async: true
+    }
   ],
 
   // Global CSS: https://go.nuxtjs.dev/config-css
