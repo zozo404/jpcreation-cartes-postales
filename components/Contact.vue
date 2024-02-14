@@ -29,6 +29,7 @@
                 class="mt-1 p-2 border rounded-md w-full"
                 required
               />
+              <input type="hidden" name="_gotcha" style="display:none !important">
             </div>
 
             <!-- Adresse e-mail -->
@@ -88,11 +89,6 @@
               />
               <i>5 Mo max</i>
             </div>
-
-            <!-- Captcha -->
-            <div
-              class="g-recaptcha mb-4"
-              data-sitekey="6LcAlnIpAAAAAD3z2fOlygboQl_7pF4zKGRl6K7T" />
 
             <!-- Bouton Envoyer -->
             <div class="text-center sm:text-start md:text-center">
