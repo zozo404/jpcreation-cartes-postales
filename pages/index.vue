@@ -14,7 +14,6 @@
     <Titles title="À propos" class="italianno mt-16" />
     <Propos class="pb-16"/>
     <Inspiration />
-    <Contact />
   </div>
 </template>
 <script>

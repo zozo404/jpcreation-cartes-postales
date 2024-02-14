@@ -92,8 +92,7 @@
             <!-- Captcha -->
             <div
               class="g-recaptcha mb-4"
-              data-sitekey="6LeCe3IpAAAAALHABArRvvItxIPbk25A7DqT6ZZH"
-            ></div>
+              data-sitekey="6LcAlnIpAAAAAD3z2fOlygboQl_7pF4zKGRl6K7T" />
 
             <!-- Bouton Envoyer -->
             <div class="text-center sm:text-start md:text-center">
