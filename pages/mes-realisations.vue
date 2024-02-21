@@ -9,13 +9,13 @@
     <Titles
       title="Mes Cartes Postales dessinés"
       class="mt-16 SamsungGA425G:px-8"
-      subtitle="Je peux dessiner vos cartes postalés sur commande !"
+      subtitle="Je peux dessiner vos cartes postales sur commande !"
     />
     <Produits :produits="CartesPostales" />
     <Titles
       title="Mes Aquarelles dessinées"
       class="mt-16 SamsungGA425G:px-8"
-      subtitle="Je peux dessiner vos animaux préférées sur commande !"
+      subtitle="Je peux dessiner vos aquarelles sur commande !"
     />
     <Produits :produits="Aquarelles" />
     <Titles
