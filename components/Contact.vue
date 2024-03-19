@@ -129,7 +129,7 @@
             <a href="mailto:jean-pierre.lefevre813@orange.fr" target="_blank">
               <i class="fas fa-envelope"></i> jean-pierre.lefevre813@orange.fr
             </a>
-            <a href="https://maps.app.goo.gl/SMRWnJ9YUquGmZ8B8" target="_blank">
+            <a href="https://maps.app.goo.gl/1zjHjUXYMZW1YYEt5" target="_blank">
               <i class="fas fa-house"></i> 7 Chemin du Mas Bellonte 66820 FUILLA
             </a>
           </div>
