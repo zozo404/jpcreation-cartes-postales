@@ -15,7 +15,6 @@
     <Titles
       title="Mes Aquarelles dessinées"
       class="mt-16 SamsungGA425G:px-8"
-      subtitle="Je peux dessiner vos aquarelles sur commande !"
     />
     <Produits :produits="Aquarelles" />
     <Titles
@@ -26,7 +25,6 @@
     <Titles
       title="Mes Nus dessinés"
       class="mt-16 SamsungGA425G:px-8"
-      subtitle="Je peux dessiner vos nus sur commande !"
     />
     <Produits :produits="Nus" />
   </section>
