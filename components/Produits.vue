@@ -15,7 +15,10 @@
           class="rounded-md cursor-pointer"
           @click="showFullScreenImageCollection(produit)"
         />
-        <h1 class="py-4 text-base"></h1>
+        <h1 class="py-4 text-base" v-if="produit.afficherNom == true">
+          {{ produit.name }}
+        </h1>
+        <h1 class="py-4 text-base" v-else></h1>
       </div>
       <!-- image pop-up -->
       <div v-if="isFullScreen" class="full-screen-image flex-col">
@@ -25,7 +28,9 @@
           class="modal-content"
           :src="fullScreenImageUrl"
         />
-        <!-- <p class="text-white">{{ fullScreenImageCollectionName }}</p> -->
+        <p v-if="fullScreenImageCollectionShowName == true" class="text-white">
+          {{ fullScreenImageCollectionName }}
+        </p>
       </div>
     </div>
   </section>
