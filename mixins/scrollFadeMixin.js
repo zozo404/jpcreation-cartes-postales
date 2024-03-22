@@ -7,6 +7,7 @@ export default {
       fullScreenImageUrl: "",
       fullScreenImageName: "",
       fullScreenImageCollectionName: "",
+      fullScreenImageCollectionShowName: "",
 
     };
   },
@@ -35,6 +36,7 @@ export default {
       this.isFullScreen = true;
       this.fullScreenImageUrl = collection.imageId.asset._ref;
       this.fullScreenImageCollectionName = collection.name
+      this.fullScreenImageCollectionShowName = collection.afficherNom
     },
   },
   mounted() {
